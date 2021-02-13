@@ -1,3 +1,5 @@
+# simulation of the flux of atmospheric muons underwater for the purpose of KM3Net experiment.
+# written by Osama Yaghi
 import matplotlib
 matplotlib.use("Agg")
 import pandas as pd
@@ -124,7 +126,7 @@ def threshold(d):
     return loss.loc[ind-1,'E']
 #--------------------------------------------------------------------------------------------
 
-# define functions simulation
+# define  simulation functions
 r1m=tan(Theta_max)*(d)-R
 r2m=tan(Theta_max)*(d+Zmax-Zmin)+R
 norm=(r2m**2-r1m**2)/(disk2**2-	disk1**2)
